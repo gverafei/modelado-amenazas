@@ -152,7 +152,21 @@
               "isEncrypted": true,
               "isPublicNetwork": true,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "873d2fca-f4a5-4005-b031-10f7e49098a7",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas solicitudes se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las solicitudes deberian requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
             },
             "id": "24f864cb-1fac-4b21-98e9-af0cdea433ae",
             "source": {
@@ -200,7 +214,21 @@
               "isEncrypted": true,
               "isPublicNetwork": true,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "15e411d9-9275-40e0-8761-0439cdbed705",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas respuestas se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberian requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
             },
             "id": "cf0f6fd5-a3bf-41f9-a714-366e900c0db5",
             "source": {
@@ -248,7 +276,21 @@
               "isEncrypted": true,
               "isPublicNetwork": true,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "fa003ef9-3142-4d50-9278-a1ab24679ec0",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas solicitudes se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las solicitudes deberian requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ]
             },
             "id": "b2c3ed85-b22f-4c2d-8a27-e988b0d3509f",
             "source": {
@@ -296,7 +338,21 @@
               "isEncrypted": true,
               "isPublicNetwork": true,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "9053a9bb-1f2e-4ae1-aee2-23decfae43fe",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas respuestas se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberian requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
             },
             "id": "23f492d4-aace-41ca-bbb1-3e6d6a7db24b",
             "source": {
@@ -316,6 +372,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Lorena Rojas",
-    "threatTop": 0
+    "threatTop": 4
   }
 }
