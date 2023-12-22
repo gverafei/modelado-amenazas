@@ -23,14 +23,17 @@
         "cells": [
           {
             "position": {
-              "x": 230,
-              "y": 110
+              "x": 30,
+              "y": 70
             },
             "size": {
               "width": 112.5,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Usuarios"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -43,7 +46,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Usuarios",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -51,6 +54,260 @@
               "hasOpenThreats": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 282,
+              "y": 70
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Bibliotecario"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "1e8a459e-bfe8-4437-a9ce-f910f23a144d",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Bibliotecario",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "zIndex": 2
+          },
+          {
+            "position": {
+              "x": 182.5,
+              "y": 250
+            },
+            "size": {
+              "width": 80,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Sitio web \nbiblioteca"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "6d3dc5d5-9f51-4d2e-a680-93028bf8cda3",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Sitio web \nbiblioteca",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "HTTP/S",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "24f864cb-1fac-4b21-98e9-af0cdea433ae",
+            "source": {
+              "cell": "3e68378b-e00e-4d75-bfec-6b93dbecadc0"
+            },
+            "target": {
+              "cell": "6d3dc5d5-9f51-4d2e-a680-93028bf8cda3"
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": 210
+              }
+            ],
+            "labels": [
+              "Web Request"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "HTTP/S",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "cf0f6fd5-a3bf-41f9-a714-366e900c0db5",
+            "source": {
+              "cell": "6d3dc5d5-9f51-4d2e-a680-93028bf8cda3"
+            },
+            "target": {
+              "cell": "3e68378b-e00e-4d75-bfec-6b93dbecadc0"
+            },
+            "vertices": [
+              {
+                "x": 100,
+                "y": 230
+              }
+            ],
+            "labels": [
+              "Web Response"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "HTTP/S",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "b2c3ed85-b22f-4c2d-8a27-e988b0d3509f",
+            "source": {
+              "cell": "1e8a459e-bfe8-4437-a9ce-f910f23a144d"
+            },
+            "target": {
+              "cell": "6d3dc5d5-9f51-4d2e-a680-93028bf8cda3"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 220
+              }
+            ],
+            "labels": [
+              "Web Request"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "HTTP/S",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "23f492d4-aace-41ca-bbb1-3e6d6a7db24b",
+            "source": {
+              "cell": "6d3dc5d5-9f51-4d2e-a680-93028bf8cda3"
+            },
+            "target": {
+              "cell": "1e8a459e-bfe8-4437-a9ce-f910f23a144d"
+            },
+            "labels": [
+              "Web Response"
+            ]
           }
         ],
         "description": "Diagrama de flujo de datos para el sitio web de la biblioteca universitaria.",
