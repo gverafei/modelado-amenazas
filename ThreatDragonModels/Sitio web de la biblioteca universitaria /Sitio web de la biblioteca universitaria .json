@@ -364,6 +364,139 @@
             "labels": [
               "Web Response"
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "0b84f4b3-f6c4-4ea4-b6c9-df57d1896829",
+            "source": {
+              "x": 10,
+              "y": 70
+            },
+            "target": {
+              "x": 460,
+              "y": 80
+            },
+            "vertices": [
+              {
+                "x": 30,
+                "y": 150
+              },
+              {
+                "x": 240,
+                "y": 170
+              },
+              {
+                "x": 420,
+                "y": 140
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Páginas",
+              "description": "Este flujo de datos representa una lectura de archivos en disco",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "efdef090-1794-462c-b8ea-cfe539e3f479",
+            "source": {
+              "cell": "8c6f8373-944f-4472-986b-0827f8e8fb5d"
+            },
+            "target": {
+              "cell": "6d3dc5d5-9f51-4d2e-a680-93028bf8cda3"
+            },
+            "labels": [
+              "Páginas"
+            ]
+          },
+          {
+            "position": {
+              "x": 40,
+              "y": 410
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Páginas web \nen disco"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "8c6f8373-944f-4472-986b-0827f8e8fb5d",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "Páginas web \nen disco",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "e669bf1e-7607-48df-8767-18d0720e8915",
+                  "title": "Modificación sin autorización",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un atacante podría modificar las páginas web sin autorización.",
+                  "mitigation": "Las páginas solo tienen acceso de lectura. Unicament el usuario administrador puede tener acceso de escritura.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
+            }
           }
         ],
         "description": "Diagrama de flujo de datos para el sitio web de la biblioteca universitaria.",
@@ -372,6 +505,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Lorena Rojas",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
