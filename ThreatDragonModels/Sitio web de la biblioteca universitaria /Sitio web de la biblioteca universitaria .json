@@ -47,7 +47,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
-              "description": "",
+              "description": "(1) Usuario web anónimo.\n(2) Usuario con credenciales de inicio de sesión válidas.\n(3) Usuario con credenciales de inicio de sesión no válidas.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
@@ -81,7 +81,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
-              "description": "",
+              "description": "(4) Bibliotecario.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
@@ -115,7 +115,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Sitio web \nbiblioteca",
-              "description": "",
+              "description": "El sitio web de la biblioteca universitaria se ejecutará en un servidor Linux con Apache. Este servidor será reforzado según el estándar de protección de servidores de la universidad. ",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
@@ -503,6 +503,9 @@
               "hasOpenThreats": false
             },
             "id": "3210d334-4567-4841-bd93-5b02bd6ac59b",
+            "labels": [
+              "Límite\nWeb server/Db"
+            ],
             "source": {
               "x": 530,
               "y": 470
@@ -516,9 +519,6 @@
                 "x": 470,
                 "y": 330
               }
-            ],
-            "labels": [
-              "Límite\nWeb server/Db"
             ]
           },
           {
