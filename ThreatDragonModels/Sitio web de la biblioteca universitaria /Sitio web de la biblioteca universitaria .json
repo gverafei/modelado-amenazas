@@ -366,43 +366,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "0b84f4b3-f6c4-4ea4-b6c9-df57d1896829",
-            "source": {
-              "x": 10,
-              "y": 70
-            },
-            "target": {
-              "x": 460,
-              "y": 80
-            },
-            "vertices": [
-              {
-                "x": 30,
-                "y": 150
-              },
-              {
-                "x": 240,
-                "y": 170
-              },
-              {
-                "x": 420,
-                "y": 140
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -595,6 +558,46 @@
             ],
             "labels": [
               "Resultados \nWeb App Query"
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Usuario/Web \nserver límite",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "0b84f4b3-f6c4-4ea4-b6c9-df57d1896829",
+            "source": {
+              "x": 10,
+              "y": 70
+            },
+            "target": {
+              "x": 460,
+              "y": 80
+            },
+            "vertices": [
+              {
+                "x": 30,
+                "y": 150
+              },
+              {
+                "x": 240,
+                "y": 150
+              },
+              {
+                "x": 420,
+                "y": 140
+              }
+            ],
+            "labels": [
+              "Usuario/Web \nserver límite"
             ]
           },
           {
