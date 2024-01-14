@@ -917,8 +917,8 @@
                 "text": "Usuarios"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -933,8 +933,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "740f271c-a15a-4a9f-890a-fc7a30fdf0be",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1142,7 +1156,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Vistas",
-              "description": "",
+              "description": "Páginas web leídas desde el disco.",
               "outOfScope": true,
               "isBidirectional": false,
               "reasonOutOfScope": "Este flujo de datos representa una lectura de archivos en disco.",
@@ -1167,7 +1181,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1184,15 +1199,29 @@
             "data": {
               "type": "tm.Flow",
               "name": "UsuarioAutenticado()",
-              "description": "",
+              "description": "Credenciales del usuario autentificado.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "Este flujo de datos representa una acción dentro del controlador.",
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "1db57b32-6203-4e98-bce7-15b45be1c433",
+                  "title": "Inyección de código",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un atacante podría enviar una entrada inyectando código malicioso para intentar obtener privilegios.",
+                  "mitigation": "1. Se aplican verificaciones de tipo, formato, longitud y rango de datos.\n2. Todos los datos enviados desde el cliente se validan.\n3. Ninguna decisión de seguridad se basa en parámetros (por ejemplo, parámetros de URL) que se pueden manipular\n. 4. Filtrado de entrada mediante validación de lista de permitidos. se utiliza\n5. Se utiliza codificación de salida",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                }
+              ]
             },
             "id": "2dc405d2-48e3-4eb7-b318-b75f43a744b6",
             "labels": [
@@ -1640,6 +1669,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "Lorena Rojas",
-    "threatTop": 26
+    "threatTop": 28
   }
 }
