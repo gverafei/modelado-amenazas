@@ -154,7 +154,7 @@
                   "title": "Denegación de servicio",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Denial of service",
+                  "type": "Information disclosure",
                   "description": "Un atacante podría denegar el acceso a usuarios válidos, haciendo que el servidor web no esté disponible o sea inutilizable temporalmente por medio del envío de múltiples peticiones simultaneas.",
                   "mitigation": "Se utiliza un balanceo de cargas en el servidor web.\nSe monitorean las direcciones IP de los clientes y al encontrar un posible ataque, se bloquea el acceso.\nSe considera contratar un servicio de VPN para ocultar la dirección IP pública a los clientes.",
                   "modelType": "STRIDE",
@@ -186,7 +186,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Request",
-              "description": "",
+              "description": "Respuestas recibidas por la aplicación hacia los usuarios.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -248,7 +248,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Response",
-              "description": "",
+              "description": "Respuestas enviadas por la aplicación hacia los usuarios.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -310,7 +310,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Request",
-              "description": "",
+              "description": "Respuestas recibidas por la aplicación hacia los bibliotecarios.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -372,7 +372,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Response",
-              "description": "",
+              "description": "Respuestas enviadas por la aplicación hacia los bibliotecarios.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -585,7 +585,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Resultados \nWeb App Query",
-              "description": "Datos recuperados desde la base de datos",
+              "description": "Datos recuperados desde la base de datos.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -652,7 +652,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Queries",
-              "description": "Instrucciones de SQL enviadas hacia la base de datos",
+              "description": "Instrucciones de SQL enviadas hacia la base de datos.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -726,7 +726,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Páginas web \nen disco",
-              "description": "(1) Usuario web anónimo\n(2) Usuario con credenciales de inicio de sesión\n(3) Usuario con credenciales de inicio de sesión no válidas\n(4) Bibliotecario",
+              "description": "Páginas físicas almacenadas en el disco.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
@@ -851,7 +851,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Web Application Config",
-              "description": "",
+              "description": "Archivo de configuración de la aplicación.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
