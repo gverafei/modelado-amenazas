@@ -963,7 +963,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Controlador \nweb",
-              "description": "",
+              "description": "Controlador de entrada que recibe las peticiones del usuario para iniciar la sesión.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
@@ -1174,7 +1174,7 @@
                 "sourceMarker": {
                   "name": ""
                 },
-                "strokeDasharray": "4 3"
+                "strokeDasharray": null
               }
             },
             "width": 200,
@@ -1185,7 +1185,7 @@
               "type": "tm.Flow",
               "name": "UsuarioAutenticado()",
               "description": "",
-              "outOfScope": true,
+              "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "Este flujo de datos representa una acción dentro del controlador.",
               "protocol": "",
@@ -1289,7 +1289,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "UsuarioAutenticado\nSQL Query",
-              "description": "",
+              "description": "Instrucciones de SQL enviadas hacia la base de datos.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -1352,7 +1352,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "UsuarioAutenticado\nSQL Query Resultado",
-              "description": "",
+              "description": "Datos recuperados desde la base de datos.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -1492,7 +1492,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Páginas web \nen disco",
-              "description": "",
+              "description": "Son las páginas web almacenadas en el disco duro.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
@@ -1506,7 +1506,7 @@
                   "title": "Modificación sin autorización",
                   "status": "Open",
                   "severity": "High",
-                  "type": "Tampering / Manipulación",
+                  "type": "Tampering",
                   "description": "Un atacante podría modificar las páginas web sin autorización.",
                   "mitigation": "Las páginas solo tienen acceso de lectura. Únicamente el usuario administrador puede tener acceso de escritura.",
                   "modelType": "STRIDE",
@@ -1596,7 +1596,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
-              "description": "",
+              "description": "El servidor de la base de datos será MySQL y se ejecutará en un servidor Linux. Este servidor será reforzado según el estándar de protección de servidores de la universidad. Esto incluirá la instalación de los últimos parches de seguridad del sistema operativo y de las aplicaciones.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": true,
@@ -1640,6 +1640,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "Lorena Rojas",
-    "threatTop": 25
+    "threatTop": 26
   }
 }
