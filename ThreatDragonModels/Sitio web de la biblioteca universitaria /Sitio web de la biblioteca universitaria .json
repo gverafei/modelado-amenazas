@@ -154,7 +154,7 @@
                   "title": "Denegación de servicio",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Information disclosure",
+                  "type": "Denial of service",
                   "description": "Un atacante podría denegar el acceso a usuarios válidos, haciendo que el servidor web no esté disponible o sea inutilizable temporalmente por medio del envío de múltiples peticiones simultaneas.",
                   "mitigation": "Se utiliza un balanceo de cargas en el servidor web.\nSe monitorean las direcciones IP de los clientes y al encontrar un posible ataque, se bloquea el acceso.\nSe considera contratar un servicio de VPN para ocultar la dirección IP pública a los clientes.",
                   "modelType": "STRIDE",
