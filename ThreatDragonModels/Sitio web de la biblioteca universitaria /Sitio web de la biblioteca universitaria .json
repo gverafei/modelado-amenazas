@@ -990,7 +990,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1014,12 +1015,12 @@
               "protocol": "HTTP/S",
               "isEncrypted": true,
               "isPublicNetwork": true,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "64afa88d-10b6-4bf6-b9a7-f1c1303ab925",
                   "title": "El flujo de datos debe utilizar HTTP/S",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "High",
                   "type": "Tampering / Manipulación",
                   "description": "Estas solicitudes se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
@@ -1060,7 +1061,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1084,12 +1086,12 @@
               "protocol": "HTTP/S",
               "isEncrypted": true,
               "isPublicNetwork": true,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "77bef6fb-b844-4a69-998e-1950936a5759",
                   "title": "El flujo de datos debe utilizar HTTP/S",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure / Brecha de información",
                   "description": "Estas respuestas se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
@@ -1287,8 +1289,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1312,12 +1313,12 @@
               "protocol": "",
               "isEncrypted": true,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "8d097a2a-a810-497d-aa2f-6b52724badc3",
                   "title": "Ataque Man in the middle",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering / Manipulación",
                   "description": "Un atacante podría interceptar las consultas de la base de datos en tránsito y obtener información confidencial, como credenciales de la base de datos, parámetros de consulta o resultados de la consulta (es poco probable ya que el flujo de datos se realiza a través de una red privada).",
@@ -1350,8 +1351,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1375,12 +1375,12 @@
               "protocol": "",
               "isEncrypted": true,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "5ec0b7dc-39d3-46dd-aeac-967e5c7527fc",
                   "title": "Ataque Man in the middle",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering / Manipulación",
                   "description": "Un atacante podría interceptar las consultas de la base de datos en tránsito y obtener información confidencial, como credenciales de la base de datos, parámetros de consulta o resultados de la consulta (es poco probable ya que el flujo de datos se realiza a través de una red privada).",
