@@ -711,13 +711,11 @@
                 "text": "Páginas web \nen disco"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -735,7 +733,7 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "e669bf1e-7607-48df-8767-18d0720e8915",
@@ -748,19 +746,6 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
-                  "score": ""
-                },
-                {
-                  "id": "843bb4d4-ea4a-4060-9161-dbbaf91c3976",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 0,
                   "score": ""
                 }
               ]
@@ -1669,6 +1654,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "Lorena Rojas",
-    "threatTop": 28
+    "threatTop": 29
   }
 }
