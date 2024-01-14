@@ -35,8 +35,8 @@
                 "text": "Usuarios"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -51,8 +51,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "1eff3637-542c-4249-a18d-176f41303078",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -400,7 +414,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Páginas",
-              "description": "",
+              "description": "Páginas web leídas desde el disco",
               "outOfScope": true,
               "isBidirectional": false,
               "reasonOutOfScope": "Este flujo de datos representa una lectura de archivos en disco",
@@ -442,7 +456,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Lee web \napp config",
-              "description": "",
+              "description": "Archivo físico de configuración leído desde el disco",
               "outOfScope": true,
               "isBidirectional": false,
               "reasonOutOfScope": "Este flujo de datos representa una lectura de archivos en disco",
@@ -664,11 +678,13 @@
                 "text": "Páginas web \nen disco"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -679,14 +695,14 @@
             "data": {
               "type": "tm.Store",
               "name": "Páginas web \nen disco",
-              "description": "",
+              "description": "(1) Usuario web anónimo\n(2) Usuario con credenciales de inicio de sesión\n(3) Usuario con credenciales de inicio de sesión no válidas\n(4) Bibliotecario",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "e669bf1e-7607-48df-8767-18d0720e8915",
@@ -699,6 +715,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "843bb4d4-ea4a-4060-9161-dbbaf91c3976",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 0,
                   "score": ""
                 }
               ]
@@ -735,7 +764,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
-              "description": "",
+              "description": "El servidor de la base de datos será MySQL y se ejecutará en un servidor Linux. Este servidor será reforzado según el estándar de protección de servidores de la universidad. Esto incluirá la instalación de los últimos parches de seguridad del sistema operativo y de las aplicaciones.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": true,
@@ -1578,6 +1607,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "Lorena Rojas",
-    "threatTop": 18
+    "threatTop": 23
   }
 }
