@@ -83,8 +83,8 @@
                 "text": "Bibliotecario"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -99,8 +99,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "075a27ee-5717-4d17-8c5b-9b08881b2a1d",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -571,7 +585,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Resultados \nWeb App Query",
-              "description": "",
+              "description": "Datos recuperados desde la base de datos",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -620,7 +634,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -637,15 +652,29 @@
             "data": {
               "type": "tm.Flow",
               "name": "Queries",
-              "description": "",
+              "description": "Instrucciones de SQL enviadas hacia la base de datos",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
               "protocol": "",
               "isEncrypted": true,
               "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "7d896fa3-d330-4560-a066-ce079abe6230",
+                  "title": "Ataque Man in the middle",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría interceptar las consultas de la base de datos en tránsito y obtener información confi dencial, como credenciales de la base de datos, parámetros de consulta o resultados de la consulta (es poco probable ya que el fl ujo de datos se realiza a través de una red privada).",
+                  "mitigation": "Aplicar una conexión cifrada en el servidor de base de datos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ]
             },
             "id": "43138620-1911-4298-9cdd-9fcb5544bf36",
             "labels": [
@@ -659,8 +688,12 @@
             },
             "vertices": [
               {
-                "x": 390,
-                "y": 370
+                "x": 320,
+                "y": 340
+              },
+              {
+                "x": 490,
+                "y": 390
               }
             ]
           },
@@ -1607,6 +1640,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "Lorena Rojas",
-    "threatTop": 23
+    "threatTop": 25
   }
 }
